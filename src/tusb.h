@@ -127,6 +127,10 @@
   #if CFG_TUD_BTH
     #include "class/bth/bth_device.h"
   #endif
+
+  #if CFG_TUD_CH341
+    #include "class/ch341/ch341_device.h"
+  #endif
 #else
   #ifndef tud_int_handler
   #define tud_int_handler(...)
